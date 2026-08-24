@@ -1,111 +1,216 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sovereign - Business Solution</title>
+    <title>Sapta Nayaka Utama - Jasa Sewa Bergodo Traditional Cultural Guard</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Font: Plus Jakarta Sans -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Font: Plus Jakarta Sans & Playfair Display -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .font-serif-custom { font-family: 'Playfair Display', serif; }
+        .bg-gold-gradient {
+            background: linear-gradient(135deg, #d97706 0%, #f59e0b 50%, #b45309 100%);
+        }
+        .text-gold-gradient {
+            background: linear-gradient(135deg, #fcd34d 0%, #fbbf24 50%, #d97706 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     </style>
 </head>
-<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-amber-500 selection:text-white">
 
     <!-- Header / Navbar -->
-    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800/80">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/85 backdrop-blur-md border-b border-amber-900/20">
         <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-            <a href="#" class="text-xl font-bold tracking-tight text-white flex items-center gap-2">
-                <span class="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center text-white font-extrabold text-sm">S</span>
-                SOVEREIGN
+            <a href="#" class="text-lg font-bold tracking-wider text-white flex items-center gap-3">
+                <span class="w-10 h-10 rounded-xl bg-gold-gradient flex items-center justify-center text-slate-950 font-black text-xl shadow-lg shadow-amber-500/20">
+                    S
+                </span>
+                <div class="flex flex-col">
+                    <span class="font-serif-custom text-white font-extrabold tracking-widest text-base">SAPTA NAYAKA</span>
+                    <span class="text-[10px] text-amber-500 tracking-widest uppercase -mt-1 font-semibold">Kricak Kidul</span>
+                </div>
             </a>
-            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
-                <a href="#about" class="hover:text-white transition-colors">Tentang Kami</a>
-                <a href="#services" class="hover:text-white transition-colors">Layanan</a>
-                <a href="#portfolio" class="hover:text-white transition-colors">Portofolio</a>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#tentang" class="hover:text-amber-400 transition-colors">Tentang Kami</a>
+                <a href="#layanan" class="hover:text-amber-400 transition-colors">Layanan & Acara</a>
+                <a href="#keunggulan" class="hover:text-amber-400 transition-colors">Keunggulan</a>
+                <a href="#paket" class="hover:text-amber-400 transition-colors">Paket Sewa</a>
             </nav>
-            <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-4 py-2.5 rounded-full text-xs font-semibold bg-white text-slate-950 hover:bg-slate-200 transition-all shadow-sm">
-                Hubungi Kami
+            <a href="#kontak" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-full text-xs font-bold bg-gold-gradient text-slate-950 hover:brightness-110 transition-all shadow-md shadow-amber-500/20 tracking-wider uppercase">
+                Reservasi Sekarang
             </a>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="pt-36 pb-20 md:pt-48 md:pb-32 px-6">
-        <div class="max-w-4xl mx-auto text-center space-y-8">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-medium">
-                <span class="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-pulse"></span>
-                Inovasi Digital & Solusi Profesional
+    <section class="relative pt-36 pb-24 md:pt-48 md:pb-36 px-6 overflow-hidden">
+        <!-- Background Radial Gradient Glow -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-amber-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto text-center space-y-8 relative z-10">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold tracking-wide uppercase">
+                <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+                Pelestari Seni & Olah Prajurit Tradisional
             </div>
-            
-            <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-[1.15]">
-                Membangun Standar Baru Dalam Ekosistem Digital
+
+            <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-[1.15] font-serif-custom">
+                Kemegahan & Keagungan <br />
+                <span class="text-gold-gradient">Prajurit Bergodo</span> Jogja
             </h1>
-            
-            <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto font-normal leading-relaxed">
-                Kami menghadirkan strategi mutakhir dan arsitektur visual presisi tinggi untuk membawa bisnis Anda melangkah lebih jauh di skala internasional.
+
+            <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto font-normal leading-relaxed">
+                Hadirkan nuansa kebudayaan Jawa yang magis, megah, dan penuh wibawa untuk pernikahan, penyambutan tamu VIP, kirab budaya, hingga acara formal perusahaan Anda bersama **Grup Bergodo Sapta Nayaka Utama** (Kricak Kidul).
             </p>
 
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-                <a href="#contact" class="w-full sm:w-auto px-6 py-3.5 rounded-full bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-sm transition-all shadow-lg shadow-indigo-600/25">
-                    Mulai Konsultasi
+                <a href="https://wa.me/" target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gold-gradient text-slate-950 font-bold text-sm transition-all shadow-lg shadow-amber-500/20 hover:scale-105 uppercase tracking-wider">
+                    Sewa via WhatsApp
                 </a>
-                <a href="#services" class="w-full sm:w-auto px-6 py-3.5 rounded-full bg-slate-900 border border-slate-800 hover:bg-slate-800 text-slate-300 font-medium text-sm transition-all">
-                    Pelajari Layanan
+                <a href="#layanan" class="w-full sm:w-auto px-8 py-4 rounded-full bg-slate-900 border border-amber-900/40 hover:bg-slate-800 text-slate-200 font-medium text-sm transition-all">
+                    Lihat Paket & Layanan
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="services" class="py-20 border-t border-slate-900 bg-slate-950">
+    <!-- Stat/Highlight Bar -->
+    <section class="border-y border-slate-800/80 bg-slate-900/40 py-8">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div>
+                <p class="text-3xl font-extrabold text-amber-400 font-serif-custom">Kricak Kidul</p>
+                <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Asal Kampung Seni</p>
+            </div>
+            <div>
+                <p class="text-3xl font-extrabold text-amber-400 font-serif-custom">100%</p>
+                <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Busana & Alat Pakem</p>
+            </div>
+            <div>
+                <p class="text-3xl font-extrabold text-amber-400 font-serif-custom">Lengkap</p>
+                <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Korps Musik & Panji</p>
+            </div>
+            <div>
+                <p class="text-3xl font-extrabold text-amber-400 font-serif-custom">Fleksibel</p>
+                <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Skala Acara Besar / Kecil</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Layanan Section -->
+    <section id="layanan" class="py-24 bg-slate-950">
         <div class="max-w-6xl mx-auto px-6">
-            <div class="mb-14 text-center sm:text-left">
-                <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Layanan Unggulan</h2>
-                <p class="text-slate-400 text-sm mt-2">Dirancang khusus untuk efisiensi dan performa maksimal.</p>
+            <div class="mb-16 text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight font-serif-custom">Layanan Pengawalan & Kirab</h2>
+                <p class="text-slate-400 text-sm mt-3 max-w-xl mx-auto">Kami siap mengawal dan memeriahkan berbagai jenis kegiatan adat maupun modern dengan tata cara khas prajurit Keraton.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Card 1 -->
-                <div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-800/80 hover:border-slate-700 transition-all space-y-4">
-                    <div class="w-10 h-10 rounded-xl bg-indigo-600/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                <div class="p-8 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-amber-500/40 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 mb-6 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
                     </div>
-                    <h3 class="text-lg font-semibold text-white">Arsitektur Terintegrasi</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Sistem infrastruktur berbasis teknologi modern yang dapat disesuaikan dengan kebutuhan alur kerja perusahaan Anda.</p>
+                    <h3 class="text-xl font-bold text-white mb-2">Pernikahan / Manten</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Pengawalan pengantin (Cucuk Senopati / Prajurit) menuju pelaminan dengan nuansa agung Jawa yang sakral dan berkesan.</p>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-800/80 hover:border-slate-700 transition-all space-y-4">
-                    <div class="w-10 h-10 rounded-xl bg-indigo-600/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                <div class="p-8 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-amber-500/40 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 mb-6 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>
                     </div>
-                    <h3 class="text-lg font-semibold text-white">Keamanan Data Tinggi</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Perlindungan informasi tingkat lanjut untuk memastikan seluruh aset digital Anda tersimpan dengan aman.</p>
+                    <h3 class="text-xl font-bold text-white mb-2">Kirab Budaya & Karnaval</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Pawai kebudayaan lengkap dengan pengibaran bendera/panji, korps musik (tambur & seruling), serta formasi jalan prajurit.</p>
                 </div>
 
                 <!-- Card 3 -->
-                <div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-800/80 hover:border-slate-700 transition-all space-y-4">
-                    <div class="w-10 h-10 rounded-xl bg-indigo-600/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"/></svg>
+                <div class="p-8 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-amber-500/40 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 mb-6 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
                     </div>
-                    <h3 class="text-lg font-semibold text-white">Analitik Real-time</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Pengambilan keputusan berbasis data yang akurat dengan metrik performa terukur secara aktual.</p>
+                    <h3 class="text-xl font-bold text-white mb-2">Penyambutan VIP & Instansi</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Penyambutan pejabat, tamu negara, peresmian gedung, hingga acara festival perusahaan secara khidmat dan elegan.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keunggulan Section -->
+    <section id="keunggulan" class="py-20 border-t border-slate-900 bg-slate-900/30">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white font-serif-custom">Mengapa Memilih Bergodo <span class="text-gold-gradient">Sapta Nayaka Utama</span>?</h2>
+                    <p class="text-slate-300 leading-relaxed text-sm sm:text-base">
+                        Berbasis di Kricak Kidul, grup bergodo kami menjaga keaslian tradisi dan disiplin tinggi dalam setiap penampilan. Kami bukan sekadar penampil, tapi penjelmaan nilai kehormatan kebudayaan Yogyakarta.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3 text-slate-300 text-sm">
+                            <span class="w-5 h-5 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center text-xs font-bold mt-0.5">✓</span>
+                            <span><strong>Kostum & Atribut Autentik:</strong> Seragam prajurit, tombak, perisai, dan aksesoris terawat rapi sesuai standar.</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-300 text-sm">
+                            <span class="w-5 h-5 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center text-xs font-bold mt-0.5">✓</span>
+                            <span><strong>Pemusik & Marching Tradisional:</strong> Diiringi tabuhan tambur/tambor dan tiupan seruling khas bergodo yang gagah.</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-300 text-sm">
+                            <span class="w-5 h-5 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center text-xs font-bold mt-0.5">✓</span>
+                            <span><strong>Personel Berpengalaman & Disiplin:</strong> Anggota terlatih dalam tata baris-berbaris dan etika pengawalan adat.</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Highlight Box -->
+                <div class="p-8 rounded-3xl bg-slate-900 border border-amber-900/30 relative overflow-hidden">
+                    <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-amber-500/10 rounded-full blur-2xl"></div>
+                    <h3 class="text-xl font-bold text-amber-400 mb-4 font-serif-custom">Informasi Pemilik & Sanggar</h3>
+                    <div class="space-y-4 text-sm text-slate-300">
+                        <div class="pb-3 border-b border-slate-800">
+                            <p class="text-xs text-slate-500 uppercase">Nama Grup</p>
+                            <p class="font-semibold text-white">Sapta Nayaka Utama</p>
+                        </div>
+                        <div class="pb-3 border-b border-slate-800">
+                            <p class="text-xs text-slate-500 uppercase">Asal Wilayah</p>
+                            <p class="font-semibold text-white">Kricak Kidul, Yogyakarta</p>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-500 uppercase">Karakteristik Tampilan</p>
+                            <p class="font-semibold text-white">Gagah, Sakral, Kompak, & Penuh Wibawa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action / Contact Section -->
+    <section id="kontak" class="py-24 px-6 relative">
+        <div class="max-w-4xl mx-auto rounded-3xl bg-gradient-to-b from-slate-900 to-slate-950 border border-amber-900/40 p-10 sm:p-16 text-center space-y-8 shadow-2xl">
+            <h2 class="text-3xl sm:text-5xl font-extrabold text-white font-serif-custom tracking-tight">
+                Siap Menghadirkan Kemegahan Tradisi?
+            </h2>
+            <p class="text-slate-300 text-base max-w-xl mx-auto">
+                Konsultasikan kebutuhan jumlah personel, jadwal acara, dan lokasi Anda bersama tim <strong>Sapta Nayaka Utama Kricak Kidul</strong>.
+            </p>
+            <div class="pt-4 flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://wa.me/" target="_blank" class="px-8 py-4 rounded-full bg-gold-gradient text-slate-950 font-bold text-sm tracking-wider uppercase hover:brightness-110 transition-all shadow-lg shadow-amber-500/20">
+                    Hubungi via WhatsApp
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Footer Section -->
     <footer class="py-12 border-t border-slate-900 bg-slate-950 text-slate-500 text-xs">
-        <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p>&copy; 2026 Sovereign Inc. Hak Cipta Dilindungi.</p>
-            <div class="flex gap-6">
-                <a href="#" class="hover:text-slate-400 transition-colors">Privasi</a>
-                <a href="#" class="hover:text-slate-400 transition-colors">Syarat & Ketentuan</a>
+        <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <span class="w-7 h-7 rounded-lg bg-gold-gradient flex items-center justify-center text-slate-950 font-black text-xs">S</span>
+                <span class="text-slate-300 font-semibold tracking-wider">SAPTA NAYAKA UTAMA - Kricak Kidul</span>
             </div>
+            <p>&copy; 2026 Sapta Nayaka Utama. Hak Cipta Dilindungi.</p>
         </div>
     </footer>
 
