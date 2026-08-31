@@ -19,6 +19,27 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+
+        /* Animasi Slideshow Latar Belakang Foto */
+        .hero-bg-slide {
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            animation: bgSlideshow 15s infinite ease-in-out;
+        }
+        .hero-bg-slide:nth-child() { animation-delay: 0s; }
+        .hero-bg-slide:nth-child(2) { animation-delay: 5s; }
+        .hero-bg-slide:nth-child(3) { animation-delay: 10s; }
+
+        @keyframes bgSlideshow {
+            0% { opacity: 0; transform: scale(1); }
+            10% { opacity: 0.35; }
+            33% { opacity: 0.35; transform: scale(1.08); }
+            43% { opacity: 0; }
+            100% { opacity: 0; }
+        }
     </style>
 </head>
 <body class="bg-slate-950 text-slate-100 antialiased selection:bg-amber-500 selection:text-white">
@@ -49,10 +70,20 @@
 
     <!-- Hero Section -->
     <section class="relative pt-36 pb-24 md:pt-48 md:pb-36 px-6 overflow-hidden">
-        <!-- Background Radial Gradient Glow -->
-        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-amber-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+        
+        <!-- Penambahan Element Foto Background Slideshow -->
+        <div class="absolute inset-0 z-0 pointer-events-none">
+            <div class="hero-bg-slide" style="background-image: url('images/bergodo1.jpg');"></div>
+            <div class="hero-bg-slide" style="background-image: url('images/bergodo2.jpg');"></div>
+            <div class="hero-bg-slide" style="background-image: url('images/bergodo3.jpg');"></div>
+            <!-- Layer Overlay Gelap untuk Menjaga Kejelasan Teks -->
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-950/85 to-slate-950"></div>
+        </div>
 
-        <div class="max-w-4xl mx-auto text-center space-y-8 relative z-10">
+        <!-- Background Radial Gradient Glow -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-amber-600/10 rounded-full blur-[120px] pointer-events-none z-10"></div>
+
+        <div class="max-w-4xl mx-auto text-center space-y-8 relative z-20">
             <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold tracking-wide uppercase">
                 <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
                 Pelestari Seni & Olah Prajurit Tradisional
@@ -79,7 +110,7 @@
     </section>
 
     <!-- Stat/Highlight Bar -->
-    <section class="border-y border-slate-800/80 bg-slate-900/40 py-8">
+    <section class="border-y border-slate-800/80 bg-slate-900/40 py-8 relative z-20">
         <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
                 <p class="text-3xl font-extrabold text-amber-400 font-serif-custom">Kricak Kidul</p>
