@@ -59,6 +59,7 @@
             <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
                 <a href="#tentang" class="hover:text-amber-400 transition-colors">Tentang Kami</a>
                 <a href="#layanan" class="hover:text-amber-400 transition-colors">Layanan & Acara</a>
+                <a href="#galeri" class="hover:text-amber-400 transition-colors">Galeri Foto</a>
                 <a href="#keunggulan" class="hover:text-amber-400 transition-colors">Keunggulan</a>
                 <a href="#paket" class="hover:text-amber-400 transition-colors">Paket Sewa</a>
             </nav>
@@ -73,11 +74,11 @@
         
         <!-- Penambahan Element Foto Background Slideshow -->
         <div class="absolute inset-0 z-0 pointer-events-none">
-            <div class="hero-bg-slide" style="background-image: url('Foto 1.jpeg');"></div>
-            <div class="hero-bg-slide" style="background-image: url('Foto 2.jpeg');"></div>
+            <div class="hero-bg-slide" style="background-image: url('images/Foto-1.jpeg');"></div>
+            <div class="hero-bg-slide" style="background-image: url('images/Foto-2.jpeg');"></div>
             <div class="hero-bg-slide" style="background-image: url('images/bergodo3.jpg');"></div>
             <!-- Layer Overlay Gelap untuk Menjaga Kejelasan Teks -->
-            <div class="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-950/85 to-slate-950"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-950/40 via-slate-950/55 to-slate-950/90"></div>
         </div>
 
         <!-- Background Radial Gradient Glow -->
@@ -213,6 +214,55 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri Kegiatan Section -->
+    <section id="galeri" class="py-24 bg-slate-950 border-t border-slate-900">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="mb-12 text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white font-serif-custom">
+                    Dokumentasi <span class="text-gold-gradient">Kegiatan</span>
+                </h2>
+                <p class="text-slate-400 text-sm mt-3 max-w-xl mx-auto">
+                    Momen keagungan, kerapian, dan kewibawaan Prajurit Sapta Nayaka Utama di berbagai acara resmi dan adat.
+                </p>
+            </div>
+
+            <!-- Grid Galeri Foto -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Card Foto 1 -->
+                <div class="group relative overflow-hidden rounded-2xl border border-amber-900/30 bg-slate-900 shadow-xl">
+                    <img src="images/Foto-1.jpeg" alt="Kirab Budaya" class="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <span class="inline-block px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-amber-500/20 text-amber-400 border border-amber-500/30 mb-2">Kirab Budaya</span>
+                        <h3 class="text-lg font-bold text-white">Pawai Ageng Kebudayaan</h3>
+                    </div>
+                </div>
+
+                <!-- Card Foto 2 -->
+                <div class="group relative overflow-hidden rounded-2xl border border-amber-900/30 bg-slate-900 shadow-xl">
+                    <img src="images/Foto-2.jpeg" alt="Pengawalan Manten" class="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <span class="inline-block px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-amber-500/20 text-amber-400 border border-amber-500/30 mb-2">Pernikahan Adat</span>
+                        <h3 class="text-lg font-bold text-white">Pengawalan Cucuk Senopati</h3>
+                    </div>
+                </div>
+
+                <!-- Card Foto 3 -->
+                <div class="group relative overflow-hidden rounded-2xl border border-amber-900/30 bg-slate-900 shadow-xl">
+                    <img src="images/bergodo3.jpg" alt="Penyambutan VIP" class="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <span class="inline-block px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-amber-500/20 text-amber-400 border border-amber-500/30 mb-2">Penyambutan VIP</span>
+                        <h3 class="text-lg font-bold text-white">Acara Formal & Instansi</h3>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
